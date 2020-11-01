@@ -45,5 +45,25 @@ main .bigDiv{
 	height:200px;
 }
 #mysection{
-	transform: translate(-100%);
+	
+	transition: 3s ease all;
+}
+#nextSection{
+	transform: translate(100%); 
+	transition: 3s ease all;
+}
+i{
+	font-size: 3rem;
+	
+	height: 40px;
+}
+i.left{
+	transform: translate(390px,60px);
+	color: tomato;
+}
+i.right{
+	transform: translate(1500px,760px);
+}
+i:hover{
+	color: teal;
 }
