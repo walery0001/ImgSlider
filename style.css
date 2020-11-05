@@ -5,37 +5,81 @@ body{
 	margin: 0;
 	padding: 0;
 	height: 100vh;
-
-}
+	overflow: hidden;
+	}
 main{
 	height: 100%;
+	background-color: violet;
 	position: relative;
+	overflow-x: hidden;
+	/* big   pictures */
+
 	}
+	/* slider          */
+	.firstSlide{
+	background:url('foto/16.jpg'); 
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform: translate(100%);
+	transition: 3s ease all;
+}
+.secondSlide{
+	background:url('foto/12.jpg'); 
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform: translate(100%);
+	transition: 3s ease all;
+}
+.thirdSlide{
+	background:url('foto/52.jpg'); 
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform: translate(100%);
+	transition: 3s ease all;
+}
+
+/* big pictur */
 main .bigDiv{
 	position: absolute;
-	width: 60%;
-	height: 60%;
-	top: 60px;
+	width: 600px;
+	height: 400px;
 	left: 0;
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: lightblue;
-}
+	background-color: lawngreen;
+	}
 .bigDiv img{
 	width: 100%;
 	height: 100%;
-}
-.imgSection{
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	bottom: 0;
-	width: 100%;
-}
-.smallDiv{
-	width: 250px;
+	}
+
+/*container with 3 div - img*/
+.imgContainer{
 	height: 250px;
+	display: flex;
+	position: absolute;
+	justify-content: space-between;
+	bottom: 10px;
+	}
+/* container with small img*/
+.imgSection{
+	display: flex;
+			justify-content: center;
+		width: 100vw;
+		}
+.smallDiv{
+	width: 200px;
+	height: 200px;
 	margin-left: 10px;
 	margin-top: 30px;
 	
@@ -44,26 +88,83 @@ main .bigDiv{
 	width: 100%;
 	height:200px;
 }
+/*javascript container*/
 #mysection{
 	
 	transition: 3s ease all;
 }
 #nextSection{
 	transform: translate(100%); 
-	transition: 3s ease all;
+	transition: 4s ease all;
+	
 }
+/*left and right div*/
+#iLeftDiv{
+		z-index: 10;
+	height: 250px;
+	position: fixed;
+	width: 10%;
+	left: 0;
+	background-color: violet;
+	bottom: 0;
+}
+#iRightDiv{
+	position: fixed;
+			z-index: 10;
+		right: 0;
+		bottom: 0;
+	width: 10%;
+	background-color: violet;
+	height: 250px;
+}
+/* arrow left and right*/
 i{
 	font-size: 3rem;
-	
-	height: 40px;
+		align-self: center;
+	z-index: 20;
 }
 i.left{
-	transform: translate(390px,60px);
-	color: tomato;
+position: fixed;
+left: 5px;
+
+
+	
 }
 i.right{
-	transform: translate(1500px,760px);
+	position: fixed;
+right: 5px;
 }
 i:hover{
 	color: teal;
+}
+
+/* m o b i l */
+@media screen and (max-width: 650px){
+	main{
+		overflow: hidden;
+	}
+	main .bigDiv{
+		width: 400px;
+		height: 300px;
+	}
+	.imgContainer{
+	height: 200px;
+	}
+	.imgSection{
+		
+	}
+	.smallDiv{
+width: 100px;
+height: 100px;
+	}
+.smallDiv img{
+	height:100%;
+}
+	#iRightDiv{
+width: 5%;
+}
+#iLeftDiv{
+	width: 5%;
+}
+
 }
