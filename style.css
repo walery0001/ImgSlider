@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -18,8 +18,11 @@ main {
 span{
   position: fixed;
   z-index: 100;
-  font-size: 2rem;
-
+  font-size: 3rem;
+  font-family: Caveat;
+  color: blueviolet;
+  margin-top: 80px;
+  transform: rotate(-20deg);
 }
 /* slider          */
 .allBigSlider{
@@ -39,19 +42,19 @@ span{
 .firstSlide{
   }
 .first {
- background: url("foto/16.jpg")center/cover;
+ background: url("foto/marr.jpg")center/cover;
     }
 .secondSlide {
 }
  .second{
-  background: url("foto/12.jpg")center/cover;;
+  background: url("foto/fitnes.jpg")center/cover;;
   
   
  }
 .thirdSlide {
   }
 .third{
-  background: url("foto/52.jpg")center/cover;;
+  background: url("foto/team.jpg")center/cover;;
 }
 
 /* big pictur */
