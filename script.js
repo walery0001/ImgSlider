@@ -53,7 +53,7 @@ setInterval(function () {
 }, 5000);
 
 function sliderBack() {
-  console.log(x);
+ 
   if (x === 4) {
     thirdSlide.setAttribute("style", "transform: translate(100%);");
   } else if (x === 5) {
