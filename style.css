@@ -20,7 +20,7 @@ span{
   z-index: 100;
   font-size: 3rem;
   font-family: Caveat;
-  color: blueviolet;
+  color: gray;
   margin-top: 80px;
   transform: rotate(-20deg);
 }
@@ -35,14 +35,14 @@ span{
 .allSlider{
   width: 80%;
   height: 70%;
-  
-  
-   margin: 20px auto;
+  margin: 20px auto;
+
 }
 .firstSlide{
   }
 .first {
  background: url("foto/marr.jpg")center/cover;
+
     }
 .secondSlide {
 }
@@ -66,7 +66,7 @@ main .bigDiv {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .bigDiv img {
   width: 100%;
@@ -81,10 +81,7 @@ main .bigDiv {
   position: absolute;
   justify-content: space-between;
   bottom: 0px;
-  background: var(--groundColorOld);
-  background: var(--groundColorSafari);
-  background: var(--groundColorEdge);
-  background: #f2994a;
+   background: #f2994a;
   }
 /* container with small img*/
 .imgSection {
@@ -159,12 +156,12 @@ i:hover {
   }
   .allSlider{
   width: 90%;
-  height: 50%;
-    margin: 5px auto;
+  height: 70%;
+    margin: 20px auto;
 }
   .imgContainer {
     height: 150px;
-
+    bottom: 20px;
 
   }
   .imgSection {
@@ -192,5 +189,51 @@ i:hover {
 }
 i.right {
     right: 0px;
+}
+}
+
+@media screen and (max-width: 450px){
+   .allSlider{
+  width: 90%;
+  height: 50%;
+}
+}
+/* height*/
+@media screen and (max-height: 450px){
+ 
+main .bigDiv {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  margin-top: 20px;
+}
+  .allSlider{
+  width: 90%;
+  height: 80%;
+}
+.imgContainer {
+  height: 100px;
+    bottom: 0px;
+    background: #f2994a;
+  }
+/* container with small img*/
+.smallDiv {
+  width: 80px;
+  height: 80px;
+  margin-left: 5px;
+  margin-top: 10px;
+  }
+.smallDiv img {
+  width: 100%;
+  border-radius: 5px; 
+  height: 80px;
+}
+
+/*left and right div*/
+#iLeftDiv {
+   height: 100px;
+  }
+#iRightDiv {
+  height: 100px;
 }
 }
