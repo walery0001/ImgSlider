@@ -23,6 +23,7 @@ span{
   color: gray;
   margin-top: 80px;
   transform: rotate(-20deg);
+ /* background-color: cornsilk;*/
 }
 /* slider          */
 .allBigSlider{
@@ -47,14 +48,14 @@ span{
 .secondSlide {
 }
  .second{
-  background: url("foto/fitnes.jpg")center/cover;;
+  background: url("foto/fitnes.jpg")center/cover;
   
   
  }
 .thirdSlide {
   }
 .third{
-  background: url("foto/team.jpg")center/cover;;
+  background: url("foto/team.jpg")center/cover;
 }
 
 /* big pictur */
