@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+main {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background: #f2994a;
+}
+  /* h1 */
+span{
+  position: fixed;
+  z-index: 100;
+  font-size: 3rem;
+  font-family: Caveat;
+  color: gray;
+  margin-top: 80px;
+  transform: rotate(-20deg);
+ 
+}
+/* slider          */
+.allBigSlider{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translate(100%);
+  transition: 3s ease all;
+}
+.allSlider{
+  width: 80%;
+  height: 70%;
+  margin: 20px auto;
+
+}
+.firstSlide{
+  }
+.first {
+ background: url("foto/marr.jpg")center/cover;
+
+    }
+.secondSlide {
+}
+ .second{
+  background: url("foto/fitnes.jpg")center/cover;
+  
+  
+ }
+.thirdSlide {
+  }
+.third{
+  background: url("foto/team.jpg")center/cover;
+}
+
+/* big pictur */
+main .bigDiv {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+.bigDiv img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/*container with 3 div - img*/
+.imgContainer {
+  height: 250px;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  bottom: 0px;
+   background: #f2994a;
+  }
+/* container with small img*/
+.imgSection {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+ }
+.smallDiv {
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+  margin-top: 30px;
+  }
+.smallDiv img {
+  width: 100%;
+  border-radius: 5px; 
+  height: 200px;
+}
+/*javascript container*/
+#mysection {
+  transition: 3s ease all;
+}
+#nextSection {
+  transform: translate(100%);
+  transition: 4s ease all;
+}
+/*left and right div*/
+#iLeftDiv {
+  z-index: 10;
+  height: 250px;
+  position: fixed;
+  width: 7%;
+  left: 0;
+  bottom: 0;
+  background: #f2994a;
+}
+#iRightDiv {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+  width: 7%;
+  height: 250px;
+  background: #f2994a;
+}
+/* arrow left and right*/
+i {
+  font-size: 3rem;
+  align-self: center;
+  z-index: 20;
+}
+i.left {
+  position: fixed;
+  left: 5px;
+}
+i.right {
+  position: fixed;
+  right: 5px;
+}
+i:hover {
+  color: teal;
+}
+
+/* m o b i l */
+@media screen and (max-width: 650px) {
+  main {
+    overflow: hidden;
+  }
+  main .bigDiv {
+    width: 80%;
+    height: 40%;
+  }
+  .allSlider{
+  width: 90%;
+  height: 70%;
+    margin: 20px auto;
+}
+  .imgContainer {
+    height: 150px;
+    bottom: 20px;
+
+  }
+  .imgSection {
+  5  }
+  .smallDiv {
+    width: 70px;
+    height: 80px;
+  }
+  .smallDiv img {
+    height: 100%;
+  }
+  #iRightDiv {
+	width: 5%;
+	height: 150px;
+    }
+  #iLeftDiv {
+	width: 4%;
+	height: 150px;
+   }
+  i{
+    color: white;
+  }
+  i.left {
+  left: 0px;
+}
+i.right {
+    right: 0px;
+}
+}
+
+@media screen and (max-width: 450px){
+   .allSlider{
+  width: 90%;
+  height: 50%;
+}
+}
+/* height*/
+@media screen and (max-height: 450px){
+ 
+main .bigDiv {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  margin-top: 20px;
+}
+  .allSlider{
+  width: 90%;
+  height: 80%;
+}
+.imgContainer {
+  height: 100px;
+    bottom: 0px;
+    background: #f2994a;
+  }
+/* container with small img*/
+.smallDiv {
+  width: 80px;
+  height: 80px;
+  margin-left: 5px;
+  margin-top: 10px;
+  }
+.smallDiv img {
+  width: 100%;
+  border-radius: 5px; 
+  height: 80px;
+}
+
+/*left and right div*/
+#iLeftDiv {
+   height: 100px;
+  }
+#iRightDiv {
+  height: 100px;
+}
+}
