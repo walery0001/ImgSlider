@@ -39,21 +39,18 @@ span{
   margin: 20px auto;
 
 }
-.firstSlide{
-  }
+
 .first{
- background: url("foto/marr.jpg")center/cover;
+ background: url("foto/marr.JPG")center/cover;
 
     }
-.secondSlide {
-}
+
  .second{
   background: url("foto/fitnes.jpg")center/cover;
   
   
  }
-.thirdSlide{
-  }
+
 .third{
   background: url("foto/team.jpg")center/cover;
 }
